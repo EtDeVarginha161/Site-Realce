@@ -1,0 +1,1441 @@
+/* =====================================================
+   CONFIGURAÇÕES GERAIS
+===================================================== */
+
+:root {
+
+    --blue: #52a9d7;
+    --blue-dark: #3197c9;
+
+    --blue-light: #e8f5fc;
+    --blue-soft: #dff1fb;
+
+    --gold: #d4ad3f;
+
+    --text: #666666;
+    --dark: #444444;
+
+    --white: #ffffff;
+
+    --serif: "Playfair Display", Georgia, serif;
+    --sans: "DM Sans", Arial, sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: var(--sans);
+
+    color: var(--text);
+
+    background: #ffffff;
+
+    line-height: 1.65;
+
+    overflow-x: hidden;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+button {
+    font-family: inherit;
+}
+
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header {
+
+    width: 100%;
+
+    height: 165px;
+
+    background: #ffffff;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.header-container {
+
+    width: min(1180px, 90%);
+
+    height: 100%;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.logo {
+
+    display: block;
+
+    width: 240px;
+}
+
+
+.logo img {
+
+    width: 100%;
+
+    height: 125px;
+
+    object-fit: contain;
+}
+
+
+
+/* =====================================================
+   MENU DESKTOP
+===================================================== */
+
+.menu {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+}
+
+
+.menu a {
+
+    font-size: 16px;
+
+    color: #555;
+
+    font-weight: 600;
+
+    transition: 0.25s;
+}
+
+
+.menu a:hover,
+.menu a.active {
+
+    color: var(--blue);
+}
+
+
+
+/* =====================================================
+   HAMBÚRGUER
+===================================================== */
+
+.menu-button {
+
+    display: none;
+
+    width: 48px;
+
+    height: 48px;
+
+    border: 0;
+
+    background: transparent;
+
+    cursor: pointer;
+}
+
+
+.menu-button span {
+
+    width: 35px;
+
+    height: 4px;
+
+    margin: 6px auto;
+
+    border-radius: 20px;
+
+    display: block;
+
+    background: #444;
+
+    transition: 0.3s;
+}
+
+
+
+/* =====================================================
+   TEXTO PEQUENO DOURADO
+===================================================== */
+
+.section-label {
+
+    display: block;
+
+    color: var(--gold);
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+
+    min-height: 650px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: var(--blue);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding:
+
+        90px
+        20px
+        130px;
+}
+
+
+.hero-content {
+
+    width: min(750px, 90%);
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.hero-label {
+
+    margin-bottom: 20px;
+
+    font-size: 20px;
+}
+
+
+.hero h1 {
+
+    color: white;
+
+    font-family: var(--serif);
+
+    font-size: clamp(55px, 8vw, 86px);
+
+    line-height: 1.05;
+
+    margin-bottom: 35px;
+}
+
+
+.hero p {
+
+    color: rgba(255,255,255,.78);
+
+    font-size: clamp(20px, 3vw, 31px);
+
+    line-height: 1.65;
+}
+
+
+
+/* onda branca */
+
+.hero-wave {
+
+    position: absolute;
+
+    bottom: -1px;
+
+    left: -5%;
+
+    width: 110%;
+
+    height: 90px;
+
+    background: white;
+
+    border-radius: 50% 50% 0 0 / 70% 70% 0 0;
+
+    transform: translateY(45px);
+}
+
+
+
+/* =====================================================
+   NÚMEROS
+===================================================== */
+
+.numbers {
+
+    background: white;
+
+    padding: 100px 20px 115px;
+
+    border-bottom: 1px solid #d9edf6;
+}
+
+
+.numbers-container {
+
+    width: min(900px, 100%);
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 50px;
+
+    text-align: center;
+}
+
+
+.number-item {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+.number-item strong {
+
+    color: var(--blue);
+
+    font-family: var(--serif);
+
+    font-size: 52px;
+
+    line-height: 1.1;
+
+    margin-bottom: 12px;
+}
+
+
+.number-item span {
+
+    color: #666;
+
+    font-size: 18px;
+}
+
+
+
+/* =====================================================
+   HISTÓRIA
+===================================================== */
+
+.history {
+
+    padding: 130px 20px;
+}
+
+
+.history-container {
+
+    width: min(1100px, 100%);
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.1fr .9fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+
+.small-line {
+
+    width: 100%;
+
+    height: 1px;
+
+    background: #e4e4e4;
+
+    margin: 25px 0 35px;
+}
+
+
+.history-text h2 {
+
+    font-family: var(--serif);
+
+    color: var(--blue);
+
+    font-size: clamp(42px, 5vw, 65px);
+
+    line-height: 1.15;
+
+    margin-bottom: 45px;
+}
+
+
+.history-text p {
+
+    font-size: 20px;
+
+    line-height: 1.85;
+
+    margin-bottom: 25px;
+
+    color: #666;
+}
+
+
+
+/* =====================================================
+   CARD DE CITAÇÃO
+===================================================== */
+
+.quote-card {
+
+    background: var(--blue-light);
+
+    border-radius: 42px;
+
+    padding: 75px 55px;
+
+    text-align: center;
+}
+
+
+.quote-logo {
+
+    width: 390px;
+
+    max-width: 90%;
+
+    margin:
+        0
+        auto
+        65px;
+}
+
+
+.quote-card blockquote {
+
+    color: var(--blue);
+
+    font-family: var(--serif);
+
+    font-size: 32px;
+
+    font-style: italic;
+
+    line-height: 1.55;
+
+    margin-bottom: 35px;
+}
+
+
+.quote-author {
+
+    color: #555;
+
+    font-size: 19px;
+}
+
+
+
+/* =====================================================
+   VALORES
+===================================================== */
+
+.values {
+
+    background: var(--blue-light);
+
+    padding: 120px 20px 130px;
+}
+
+
+.values-container {
+
+    width: min(1100px, 100%);
+
+    margin: auto;
+}
+
+
+.values-header {
+
+    text-align: center;
+
+    margin-bottom: 70px;
+}
+
+
+.title-line {
+
+    height: 1px;
+
+    width: min(720px, 100%);
+
+    background: #d8eaf2;
+
+    margin:
+        30px
+        auto
+        35px;
+}
+
+
+.values-header h2 {
+
+    font-family: var(--serif);
+
+    color: var(--blue);
+
+    font-size: clamp(48px, 6vw, 72px);
+}
+
+
+
+/* cards */
+
+.values-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 35px;
+}
+
+
+.value-card {
+
+    background: white;
+
+    border-radius: 35px;
+
+    padding:
+        65px
+        45px;
+
+    min-height: 410px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 15px rgba(67, 151, 193, .05);
+}
+
+
+.value-icon {
+
+    width: 105px;
+
+    height: 105px;
+
+    border-radius: 25px;
+
+    background: #eff9fd;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: var(--blue);
+
+    font-size: 55px;
+
+    margin-bottom: 40px;
+}
+
+
+.value-card h3 {
+
+    font-family: var(--serif);
+
+    color: var(--blue);
+
+    font-size: 28px;
+
+    margin-bottom: 25px;
+}
+
+
+.value-card p {
+
+    max-width: 430px;
+
+    font-size: 19px;
+
+    line-height: 1.75;
+}
+
+
+
+/* =====================================================
+   CTA FINAL
+===================================================== */
+
+.cta {
+
+    min-height: 650px;
+
+    background: var(--blue);
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding:
+        110px
+        20px
+        140px;
+}
+
+
+.cta-content {
+
+    width: min(800px, 100%);
+
+    text-align: center;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.cta h2 {
+
+    font-family: var(--serif);
+
+    color: white;
+
+    font-size: clamp(48px, 6vw, 70px);
+
+    line-height: 1.1;
+
+    margin-bottom: 30px;
+}
+
+
+.cta p {
+
+    color: rgba(255,255,255,.75);
+
+    font-size: 24px;
+
+    line-height: 1.6;
+
+    max-width: 720px;
+
+    margin:
+        0
+        auto
+        55px;
+}
+
+
+
+/* =====================================================
+   BOTÕES CTA
+===================================================== */
+
+.cta-buttons {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.button {
+
+    width: 410px;
+
+    max-width: 100%;
+
+    min-height: 85px;
+
+    border-radius: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    font-size: 21px;
+
+    font-weight: 700;
+
+    transition:
+        transform .2s,
+        box-shadow .2s,
+        background .2s;
+}
+
+
+.button:hover {
+
+    transform: translateY(-3px);
+}
+
+
+.button-white {
+
+    background: white;
+
+    color: var(--blue);
+
+    box-shadow:
+        0 12px 25px rgba(0,0,0,.08);
+}
+
+
+.button-white:hover {
+
+    box-shadow:
+        0 15px 30px rgba(0,0,0,.14);
+}
+
+
+.button-outline {
+
+    color: white;
+
+    border: 2px solid rgba(255,255,255,.45);
+}
+
+
+.button-outline:hover {
+
+    background: rgba(255,255,255,.1);
+}
+
+
+
+/* onda */
+
+.cta-wave {
+
+    position: absolute;
+
+    bottom: -55px;
+
+    left: -5%;
+
+    width: 110%;
+
+    height: 100px;
+
+    background: white;
+
+    border-radius: 50% 50% 0 0 / 80% 80% 0 0;
+}
+
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .header {
+
+        height: 135px;
+    }
+
+
+    .logo {
+
+        width: 205px;
+    }
+
+
+    .logo img {
+
+        height: 105px;
+    }
+
+
+    /* menu mobile */
+
+    .menu-button {
+
+        display: block;
+
+        position: relative;
+
+        z-index: 1002;
+    }
+
+
+    .menu {
+
+        position: absolute;
+
+        top: 135px;
+
+        left: 0;
+
+        width: 100%;
+
+        background: white;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        max-height: 0;
+
+        overflow: hidden;
+
+        opacity: 0;
+
+        box-shadow:
+            0 12px 20px rgba(0,0,0,.08);
+
+        transition:
+            max-height .35s,
+            opacity .3s;
+    }
+
+
+    .menu.open {
+
+        max-height: 400px;
+
+        opacity: 1;
+    }
+
+
+    .menu a {
+
+        padding: 18px 7%;
+
+        border-top: 1px solid #eee;
+    }
+
+
+    /* animação menu */
+
+    .menu-button.active span:nth-child(1) {
+
+        transform:
+            translateY(10px)
+            rotate(45deg);
+    }
+
+
+    .menu-button.active span:nth-child(2) {
+
+        opacity: 0;
+    }
+
+
+    .menu-button.active span:nth-child(3) {
+
+        transform:
+            translateY(-10px)
+            rotate(-45deg);
+    }
+
+
+    .numbers-container {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .history-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 70px;
+    }
+
+
+    .values-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 600px) {
+
+
+    /* HEADER */
+
+    .header {
+
+        height: 105px;
+    }
+
+
+    .header-container {
+
+        width: 88%;
+    }
+
+
+    .logo {
+
+        width: 145px;
+    }
+
+
+    .logo img {
+
+        height: 85px;
+    }
+
+
+    .menu {
+
+        top: 105px;
+    }
+
+
+    .menu-button {
+
+        width: 42px;
+    }
+
+
+    .menu-button span {
+
+        width: 28px;
+
+        height: 3px;
+
+        margin: 5px auto;
+    }
+
+
+    .menu-button.active span:nth-child(1) {
+
+        transform:
+            translateY(8px)
+            rotate(45deg);
+    }
+
+
+    .menu-button.active span:nth-child(3) {
+
+        transform:
+            translateY(-8px)
+            rotate(-45deg);
+    }
+
+
+
+    /* HERO */
+
+    .hero {
+
+        min-height: 510px;
+
+        padding:
+            70px
+            28px
+            100px;
+    }
+
+
+    .hero-content {
+
+        width: 100%;
+    }
+
+
+    .hero-label {
+
+        font-size: 15px;
+
+        margin-bottom: 15px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 48px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .hero p {
+
+        font-size: 20px;
+
+        line-height: 1.7;
+    }
+
+
+    .hero-wave {
+
+        height: 55px;
+
+        transform: translateY(28px);
+    }
+
+
+
+    /* NÚMEROS */
+
+    .numbers {
+
+        padding:
+            80px
+            25px
+            90px;
+    }
+
+
+    .numbers-container {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        column-gap: 20px;
+
+        row-gap: 50px;
+    }
+
+
+    .number-item strong {
+
+        font-size: 39px;
+    }
+
+
+    .number-item span {
+
+        font-size: 15px;
+    }
+
+
+
+    /* HISTÓRIA */
+
+    .history {
+
+        padding:
+            85px
+            25px
+            100px;
+    }
+
+
+    .history-container {
+
+        gap: 65px;
+    }
+
+
+    .section-label {
+
+        font-size: 14px;
+    }
+
+
+    .small-line {
+
+        margin:
+            18px
+            0
+            25px;
+    }
+
+
+    .history-text h2 {
+
+        font-size: 42px;
+
+        margin-bottom: 35px;
+    }
+
+
+    .history-text p {
+
+        font-size: 18px;
+
+        line-height: 1.75;
+
+        margin-bottom: 25px;
+    }
+
+
+
+    /* CITAÇÃO */
+
+    .quote-card {
+
+        border-radius: 30px;
+
+        padding:
+            55px
+            30px;
+    }
+
+
+    .quote-logo {
+
+        width: 270px;
+
+        margin-bottom: 50px;
+    }
+
+
+    .quote-card blockquote {
+
+        font-size: 27px;
+
+        line-height: 1.55;
+    }
+
+
+    .quote-author {
+
+        font-size: 17px;
+    }
+
+
+
+    /* VALORES */
+
+    .values {
+
+        padding:
+            90px
+            24px
+            100px;
+    }
+
+
+    .values-header {
+
+        margin-bottom: 55px;
+    }
+
+
+    .title-line {
+
+        margin:
+            25px
+            auto
+            30px;
+    }
+
+
+    .values-header h2 {
+
+        font-size: 46px;
+    }
+
+
+    .values-grid {
+
+        gap: 30px;
+    }
+
+
+    .value-card {
+
+        min-height: 350px;
+
+        border-radius: 28px;
+
+        padding:
+            50px
+            25px;
+    }
+
+
+    .value-icon {
+
+        width: 85px;
+
+        height: 85px;
+
+        font-size: 45px;
+
+        border-radius: 22px;
+
+        margin-bottom: 35px;
+    }
+
+
+    .value-card h3 {
+
+        font-size: 25px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .value-card p {
+
+        font-size: 17px;
+
+        line-height: 1.7;
+    }
+
+
+
+    /* CTA */
+
+    .cta {
+
+        min-height: 610px;
+
+        padding:
+            90px
+            25px
+            130px;
+    }
+
+
+    .cta h2 {
+
+        font-size: 46px;
+    }
+
+
+    .cta p {
+
+        font-size: 20px;
+
+        margin-bottom: 45px;
+    }
+
+
+    .button {
+
+        width: 330px;
+
+        min-height: 72px;
+
+        font-size: 18px;
+    }
+
+}
+
+
+
+/* =====================================================
+   CELULARES PEQUENOS
+===================================================== */
+
+@media (max-width: 390px) {
+
+    .hero h1 {
+
+        font-size: 42px;
+    }
+
+
+    .hero p {
+
+        font-size: 18px;
+    }
+
+
+    .number-item strong {
+
+        font-size: 34px;
+    }
+
+
+    .number-item span {
+
+        font-size: 14px;
+    }
+
+
+    .history-text h2 {
+
+        font-size: 37px;
+    }
+
+
+    .history-text p {
+
+        font-size: 17px;
+    }
+
+
+    .quote-card blockquote {
+
+        font-size: 24px;
+    }
+
+
+    .values-header h2 {
+
+        font-size: 40px;
+    }
+
+
+    .value-card h3 {
+
+        font-size: 23px;
+    }
+
+
+    .cta h2 {
+
+        font-size: 41px;
+    }
+
+}
+
+/* =====================================================
+   FOTO DA HISTÓRIA - ETEC ZONA LESTE
+===================================================== */
+.history-photo-card {
+    align-self: center;
+    margin: 0;
+    background: #ffffff;
+    border-radius: 26px;
+    overflow: hidden;
+    box-shadow: 0 20px 55px rgba(28, 103, 143, 0.16);
+    border: 1px solid rgba(82, 169, 215, 0.18);
+}
+
+.history-photo-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.history-photo-card figcaption {
+    padding: 24px 26px 28px;
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.history-photo-card figcaption strong {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--blue-dark);
+    font-family: var(--serif);
+    font-size: 22px;
+}
+
+.history-text strong {
+    color: var(--blue-dark);
+}
+
+@media (max-width: 850px) {
+    .history-photo-card {
+        width: 100%;
+        max-width: 680px;
+        margin: 10px auto 0;
+    }
+}
+
+/* V12 — paleta Realce */
+:root{--blue:#0b4c73;--blue-dark:#073a59;--blue-light:#edf4f7;--blue-soft:#e5eff4;--gold:#183f59;--text:#52636c;--dark:#243b48}
+.section-label,.eyebrow{color:#183f59!important}
+
+/* V13 — paleta final Realce */
+:root{--blue:#0b4c73;--blue-dark:#073a59;--deep:#0b3f61;--blue-light:#edf4f7;--light-blue:#edf4f7;--blue-soft:#e5eff4;--gold:#667784;--yellow:#667784;--text:#465a66;--border:#d9e6ec}
+.eyebrow{color:#667784!important}
+
+/* V14 — rótulo superior padronizado */
+.hero-label.section-label{color:#667784!important;text-transform:uppercase;font-weight:700;letter-spacing:2px;font-size:20px;background:transparent!important}

@@ -1,0 +1,45 @@
+:root{--site-blue:#51a9d8;--site-blue-dark:#268dbf;--site-blue-light:#eaf6fc;--site-gold:#e1c63d;--site-text:#565656;--site-white:#fff;--site-shadow:0 3px 14px rgba(0,0,0,.10)}
+*{box-sizing:border-box}
+.site-header{position:sticky!important;top:0;z-index:9999;background:#fff!important;box-shadow:var(--site-shadow);width:100%;height:auto!important;padding:0!important}
+.site-header-inner{max-width:1320px;margin:auto;height:104px;padding:0 38px;display:grid;grid-template-columns:220px 1fr;align-items:center;gap:44px}
+.site-logo{display:flex;align-items:center;flex:0 0 auto}.site-logo img{display:block;width:200px!important;height:76px!important;object-fit:contain}
+.site-desktop-nav{display:flex;align-items:center;justify-content:center;gap:42px;width:100%}
+.site-desktop-nav a{font-family:"DM Sans",Arial,sans-serif;color:#4d4d4d;text-decoration:none;font-weight:600;font-size:18px;white-space:nowrap;position:relative;padding:39px 0 35px}
+.site-desktop-nav a:hover,.site-desktop-nav a.is-active{color:var(--site-blue-dark)}.site-desktop-nav a.is-active:after{content:"";position:absolute;left:0;right:0;bottom:27px;height:2px;background:var(--site-blue)}
+.site-menu-toggle{display:none!important;width:46px;height:46px;border:0;background:transparent;padding:9px;cursor:pointer;flex-direction:column;justify-content:center;gap:6px}.site-menu-toggle span{display:block;width:28px;height:3px;border-radius:4px;background:#444;transition:.25s}.site-menu-toggle.open span:nth-child(1){transform:translateY(9px) rotate(45deg)}.site-menu-toggle.open span:nth-child(2){opacity:0}.site-menu-toggle.open span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}
+.site-mobile-nav{display:none!important;background:#fff;border-top:1px solid #edf1f3;padding:8px 20px 18px}.site-mobile-nav a{display:block;text-decoration:none;color:#4d4d4d;font-family:"DM Sans",Arial,sans-serif;font-weight:600;padding:13px 12px;border-radius:10px}.site-mobile-nav a:hover,.site-mobile-nav a.is-active{background:var(--site-blue-light);color:var(--site-blue-dark)}.site-legacy-compat{display:none!important}
+
+/* Rodapé único de todas as páginas */
+.site-footer{display:block!important;background:var(--site-blue)!important;color:#fff!important;margin:0!important;padding:56px 0 0!important;width:100%!important;font-family:"DM Sans",Arial,sans-serif}
+.site-footer-inner{width:min(1120px,calc(100% - 64px));margin:0 auto;display:grid;grid-template-columns:1.35fr .95fr 1fr 1.15fr;gap:58px;text-align:left}
+.site-footer-brand{padding-right:12px}.site-footer-wordmark{display:inline-block;color:#fff!important;text-decoration:none!important;font-size:14px;font-weight:600;letter-spacing:.2px;margin-bottom:78px}.site-footer-brand p{font-size:19px;line-height:1.9;margin:0 0 28px;max-width:430px;color:#fff!important}.site-socials{display:flex;gap:18px}.site-socials a{width:60px;height:60px;border:1px solid rgba(255,255,255,.35);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:.2s}.site-socials a:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}.site-socials img{width:27px;height:27px;object-fit:contain;filter:brightness(0) invert(1)}
+.site-footer-column{display:flex;flex-direction:column;align-items:flex-start;gap:18px;padding-top:374px}.site-footer-column h3{font-family:Georgia,"Times New Roman",serif;font-size:24px;letter-spacing:.8px;color:var(--site-gold)!important;margin:0 0 8px;font-weight:700}.site-footer-column a{color:#fff!important;text-decoration:none!important;font-size:18px;line-height:1.4}.site-footer-column>a:hover{text-decoration:underline!important}.site-footer-contact{gap:20px}.site-footer-contact>a:not(.site-budget-button){display:flex;align-items:center;gap:14px;white-space:nowrap}.site-footer-contact span{width:22px;text-align:center}.site-budget-button{border:1px solid rgba(255,255,255,.48);border-radius:999px;padding:14px 22px;margin-top:8px;font-weight:600;text-align:center;white-space:nowrap}.site-budget-button:hover{background:#fff!important;color:var(--site-blue-dark)!important;text-decoration:none!important}
+.site-copyright{max-width:1120px;margin:52px auto 0!important;padding:22px 20px 24px!important;border-top:1px solid rgba(255,255,255,.25);text-align:center!important;color:rgba(255,255,255,.9)!important;font:400 14px "DM Sans",Arial,sans-serif!important;width:calc(100% - 64px)!important}
+body>footer:not(#site-footer),body>.footer:not(#site-footer){display:none!important}
+
+@media(max-width:1050px){.site-header-inner{height:86px;padding:0 20px;display:flex;justify-content:space-between;gap:20px}.site-logo img{width:160px!important;height:62px!important}.site-desktop-nav{display:none!important}.site-menu-toggle{display:flex!important}.site-mobile-nav.open{display:block!important}.site-footer-inner{grid-template-columns:1fr 1fr;gap:42px 70px}.site-footer-brand{grid-column:1/-1}.site-footer-wordmark{margin-bottom:30px}.site-footer-column{padding-top:0}.site-footer-brand p{max-width:620px}.site-copyright{margin-top:40px!important}}
+@media(max-width:650px){.site-footer{padding-top:42px!important}.site-footer-inner{width:calc(100% - 40px);grid-template-columns:1fr;gap:34px}.site-footer-brand{grid-column:auto}.site-footer-wordmark{margin-bottom:26px}.site-footer-brand p{font-size:17px;line-height:1.7}.site-socials a{width:52px;height:52px}.site-footer-column{gap:13px}.site-footer-column h3{font-size:21px}.site-footer-column a{font-size:16px}.site-copyright{width:calc(100% - 40px)!important;margin-top:34px!important}}
+@media(max-width:480px){.site-header-inner{height:78px;padding:0 14px}.site-logo img{width:145px!important;height:56px!important}}
+
+.value-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-icon img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}/* Logo oficial no rodapé */
+.site-footer-wordmark{margin-bottom:34px!important}
+.site-footer-logo-img{display:block;width:118px;height:118px;object-fit:cover;border-radius:50%;mix-blend-mode:screen}
+@media(max-width:650px){.site-footer-logo-img{width:100px;height:100px}}
+
+/* V12 — identidade azul-marinho Realce */
+:root{--site-blue:#0b4c73;--site-blue-dark:#073a59;--site-blue-light:#edf4f7;--site-gold:#ffffff;--site-text:#465a66}
+.site-footer{background:#0b3f61!important}.site-footer-column h3{color:#fff!important}.site-desktop-nav a:hover,.site-desktop-nav a.is-active{color:#0b4c73}.site-desktop-nav a.is-active:after{background:#0b4c73}
+
+/* V13 — navegação/rodapé */
+:root{--site-blue:#0b4c73;--site-blue-dark:#073a59;--site-blue-light:#edf4f7;--site-gold:#667784;--site-text:#465a66}
+.site-footer{background:#0b3f61!important}.site-footer-column h3{color:#fff!important}

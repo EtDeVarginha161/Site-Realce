@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore - Catálogo de Produtos personalizados">
+  <title>Catálogo de Produtos</title>
+  <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="site-shared.css">
+    <link rel="icon" type="image/jpeg" href="img/logo.jpeg">
+</head>
+<body>
+
+  <header class="site-header">
+  <div class="site-header-inner">
+    <a href="index.html" class="site-logo" aria-label="Realce - Início"><img src="img/logo.jpeg" alt="Realce"></a>
+    <nav class="site-desktop-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="apresentacao.html">Quem Somos</a>
+      <a href="missao.html">Missão &amp; Valores</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+    <button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="siteMobileNav"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="site-mobile-nav" id="siteMobileNav" aria-label="Navegação mobile">
+    <a href="index.html">Início</a><a href="apresentacao.html">Quem Somos</a><a href="missao.html">Missão &amp; Valores</a><a href="catalogo.html">Catálogo</a><a href="contato.html">Contato</a>
+  </nav>
+</header>
+<!-- elementos de compatibilidade para scripts antigos; não são exibidos -->
+<div class="site-legacy-compat" aria-hidden="true">
+  <button id="menuButton" class="menu-button" type="button"></button><div id="mobileNav" class="mobile-nav"></div>
+  <button id="menuBtn" class="menu-btn" type="button"></button><div id="mobileMenu" class="mobile-menu"></div><div id="menu" class="menu"></div>
+</div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">EXPLORE</p>
+        <h1>Catálogo de Produtos</h1>
+        <p>Escolha o produto ideal e personalize com a identidade da sua marca.</p>
+      </div>
+      <div class="hero-wave"></div>
+    </section>
+
+    <section class="catalog" id="catalogo">
+      <div class="filters" aria-label="Categorias">
+        <button class="filter active" data-category="todos">Todos</button>
+        <button class="filter" data-category="vestuario">Vestuário</button>
+        <button class="filter" data-category="casa">Casa</button>
+        <button class="filter" data-category="acessorios">Acessórios</button>
+        <button class="filter" data-category="papelaria">Papelaria</button>
+      </div>
+
+      <div class="search-box">
+        <span class="search-icon">⌕</span>
+        <input id="searchInput" type="search" placeholder="Buscar produto..." aria-label="Buscar produto">
+      </div>
+
+      <div class="products" id="products">
+
+        <article class="product-card" data-category="vestuario" data-name="camiseta">
+          <div class="product-image catalog-photo"><img src="img/camiseta-realce.jpeg" alt="Camiseta personalizado pela Realce"></div>
+          <div class="product-info">
+            <h2>Camiseta</h2>
+            <p>Camiseta 100% algodão com impressão digital de alta qualidade.</p>
+            <strong>A partir de R$ 49,90</strong>
+            <button class="customize">Personalizar</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="casa" data-name="caneca">
+          <div class="product-image catalog-photo"><img src="img/caneca-realce.jpeg" alt="Caneca personalizado pela Realce"></div>
+          <div class="product-info">
+            <h2>Caneca</h2>
+            <p>Caneca cerâmica 325ml com sublimação em alta resolução.</p>
+            <strong>A partir de R$ 29,90</strong>
+            <button class="customize">Personalizar</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="acessorios" data-name="capa de celular">
+          <div class="product-image catalog-photo"><img src="img/capa-celular-realce.jpeg" alt="Capa De Celular personalizado pela Realce"></div>
+          <div class="product-info">
+            <h2>Capa de Celular</h2>
+            <p>Capa protetora com impressão UV para os principais modelos.</p>
+            <strong>A partir de R$ 39,90</strong>
+            <button class="customize">Personalizar</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="casa" data-name="almofada">
+          <div class="product-image catalog-photo"><img src="img/almofada-realce.jpeg" alt="Almofada personalizado pela Realce"></div>
+          <div class="product-info">
+            <h2>Almofada</h2>
+            <p>Almofada 40×40cm com enchimento e capa personalizada.</p>
+            <strong>A partir de R$ 54,90</strong>
+            <button class="customize">Personalizar</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="papelaria" data-name="caderno">
+          <div class="product-image catalog-photo"><img src="img/caderno-realce.jpeg" alt="Caderno personalizado pela Realce"></div>
+          <div class="product-info">
+            <h2>Caderno</h2>
+            <p>Caderno personalizado para estudos, empresas e eventos.</p>
+            <strong>A partir de R$ 34,90</strong>
+            <button class="customize">Personalizar</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="acessorios" data-name="bolsa tote">
+          <div class="product-image catalog-photo"><img src="img/bolsa-realce.jpeg" alt="Bolsa Tote personalizado pela Realce"></div>
+          <div class="product-info">
+            <h2>Bolsa Tote</h2>
+            <p>Bolsa em tecido resistente com estampa personalizada.</p>
+            <strong>A partir de R$ 44,90</strong>
+            <button class="customize">Personalizar</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="casa" data-name="garrafa">
+          <div class="product-image catalog-photo"><img src="img/garrafa-realce.jpeg" alt="Garrafa personalizado pela Realce"></div>
+          <div class="product-info">
+            <h2>Garrafa</h2>
+            <p>Garrafa personalizada para ações, eventos e marcas.</p>
+            <strong>A partir de R$ 39,90</strong>
+            <button class="customize">Personalizar</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="papelaria" data-name="ecobag personalizada">
+          <div class="product-image catalog-photo"><img src="img/ecobag-realce.jpeg" alt="Ecobag Personalizada personalizado pela Realce"></div>
+          <div class="product-info">
+            <h2>Ecobag Personalizada</h2>
+            <p>Ecobag prática com impressão personalizada em alta qualidade.</p>
+            <strong>A partir de R$ 24,90</strong>
+            <button class="customize">Personalizar</button>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="empty-state" id="emptyState">
+        <h2>Nenhum produto encontrado</h2>
+        <p>Tente outra busca ou escolha uma categoria diferente.</p>
+      </div>
+    </section>
+
+    <section class="quote" id="quem-somos">
+      <div class="quote-inner">
+        <h2>Não encontrou o que procura?</h2>
+        <p>Entre em contato e solicite um orçamento<br class="desktop"> personalizado para o seu projeto.</p>
+        <a href="#contato" class="quote-btn">Solicitar orçamento</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const filters = document.querySelectorAll(".filter");
+    const cards = document.querySelectorAll(".product-card");
+    const searchInput = document.getElementById("searchInput");
+    const emptyState = document.getElementById("emptyState");
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    let currentCategory = "todos";
+
+    function updateProducts() {
+      const term = searchInput.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const category = card.dataset.category;
+        const name = card.dataset.name.toLowerCase();
+
+        const categoryMatch =
+          currentCategory === "todos" || category === currentCategory;
+        const searchMatch = !term || name.includes(term);
+
+        if (categoryMatch && searchMatch) {
+          card.classList.remove("hidden");
+          visible++;
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+
+      emptyState.classList.toggle("show", visible === 0);
+    }
+
+    filters.forEach(button => {
+      button.addEventListener("click", () => {
+        filters.forEach(item => item.classList.remove("active"));
+        button.classList.add("active");
+        currentCategory = button.dataset.category;
+        updateProducts();
+      });
+    });
+
+    searchInput.addEventListener("input", updateProducts);
+
+    document.querySelectorAll(".customize").forEach(button => {
+    button.addEventListener("click", () => {
+    const card = button.closest(".product-card");
+    const produto = card.dataset.name;
+
+    window.location.href =
+      "produto.html?produto=" + encodeURIComponent(produto);
+  });
+});
+
+    menuBtn.addEventListener("click", () => {
+      const opened = mobileMenu.classList.toggle("open");
+      menuBtn.classList.toggle("open", opened);
+      menuBtn.setAttribute("aria-expanded", opened);
+    });
+
+    mobileMenu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        menuBtn.classList.remove("open");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
+<footer id="site-footer" class="site-footer">
+  <div class="site-footer-inner">
+    <div class="site-footer-brand">
+      <a href="index.html" class="site-footer-wordmark" aria-label="Página inicial"><img src="img/logo-footer-realce.jpeg" alt="Realce" class="site-footer-logo-img"></a>
+      <p>Produtos únicos com a sua identidade. Para marcas que querem se destacar.</p>
+      <div class="site-socials" aria-label="Redes sociais">
+        <a href="#" aria-label="Instagram"><img src="img/Instagram.png" alt=""></a>
+        <a href="#" aria-label="Facebook"><img src="img/facebook.png" alt=""></a>
+        <a href="#" aria-label="WhatsApp"><img src="img/whatsapp.webp" alt=""></a>
+      </div>
+    </div>
+
+    <div class="site-footer-column">
+      <h3>NAVEGAÇÃO</h3>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="apresentacao.html">Quem Somos</a>
+      <a href="missao.html">Missão &amp; Valores</a>
+      <a href="contato.html">Contato</a>
+    </div>
+
+    <div class="site-footer-column">
+      <h3>PRODUTOS</h3>
+      <a href="produto.html?produto=Camiseta">Camisetas</a>
+      <a href="produto.html?produto=Caneca">Canecas</a>
+      <a href="produto.html?produto=Capa%20de%20Celular">Capas de Celular</a>
+      <a href="produto.html?produto=Caderno">Cadernos</a>
+      <a href="produto.html?produto=Bolsa%20Tote">Bolsas Tote</a>
+      <a href="produto.html?produto=Almofada">Almofadas</a>
+    </div>
+
+    <div class="site-footer-column site-footer-contact">
+      <h3>CONTATO</h3>
+      <a href="mailto:contato@realce.com.br"><span>✉</span> contato@realce.com.br</a>
+      <a href="tel:+5511999990000"><span>☎</span> (11) 98879-5634</a>
+      <a class="site-budget-button" href="contato.html">Solicitar orçamento</a>
+    </div>
+  </div>
+  <div class="site-copyright">© 2026 Realce. Todos os direitos reservados.</div>
+</footer>
+<script src="site-shared.js"></script>
+</body>
+</html>
