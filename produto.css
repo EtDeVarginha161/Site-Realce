@@ -1,0 +1,2176 @@
+@import url(
+    "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+);
+
+
+/* ==================================================
+   VARIÁVEIS
+================================================== */
+
+:root {
+
+    --blue:
+        #50a7d8;
+
+    --blue-dark:
+        #3f99cc;
+
+    --blue-light:
+        #e9f5fc;
+
+    --yellow:
+        #d5ad35;
+
+    --text:
+        #555b60;
+
+    --white:
+        #ffffff;
+
+    --border:
+        #d8eef8;
+
+}
+
+
+/* ==================================================
+   RESET
+================================================== */
+
+* {
+
+    box-sizing:
+        border-box;
+
+}
+
+
+html {
+
+    scroll-behavior:
+        smooth;
+
+}
+
+
+body {
+
+    margin:
+        0;
+
+    font-family:
+        "DM Sans",
+        Arial,
+        sans-serif;
+
+    color:
+        var(--text);
+
+    background:
+        white;
+
+}
+
+
+button,
+input {
+
+    font:
+        inherit;
+
+}
+
+
+/* ==================================================
+   PRODUTO
+================================================== */
+
+.produto {
+
+    padding:
+        45px 25px 120px;
+
+}
+
+
+.produto-container {
+
+    width:
+        min(
+            1200px,
+            100%
+        );
+
+    margin:
+        auto;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0, .95fr)
+        minmax(0, 1.05fr);
+
+    gap:
+        70px;
+
+}
+
+
+/* ==================================================
+   IMAGEM
+================================================== */
+
+.produto-imagem {
+
+    width:
+        100%;
+
+    aspect-ratio:
+        1 / 1;
+
+    border-radius:
+        45px;
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            #292929,
+            #101010
+        );
+
+}
+
+
+.categoria {
+
+    position:
+        absolute;
+
+    z-index:
+        2;
+
+    top:
+        35px;
+
+    left:
+        35px;
+
+    padding:
+        14px 28px;
+
+    border-radius:
+        999px;
+
+    background:
+        white;
+
+    color:
+        var(--blue-dark);
+
+    font-size:
+        20px;
+
+    font-weight:
+        600;
+
+}
+
+
+/* ==================================================
+   COR SELECIONADA
+================================================== */
+
+.cor-selecionada {
+
+    margin-top:
+        35px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    font-size:
+        22px;
+
+}
+
+
+.cor-selecionada strong {
+
+    color:
+        var(--blue-dark);
+
+}
+
+
+.amostra-cor {
+
+    width:
+        45px;
+
+    height:
+        45px;
+
+    flex:
+        0 0 45px;
+
+    border-radius:
+        50%;
+
+    background:
+        white;
+
+    border:
+        4px solid
+        var(--blue);
+
+}
+
+
+/* ==================================================
+   BENEFÍCIOS
+================================================== */
+
+.beneficios {
+
+    margin-top:
+        35px;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            1fr
+        );
+
+    gap:
+        18px;
+
+}
+
+
+.beneficios div {
+
+    min-height:
+        78px;
+
+    padding:
+        15px 20px;
+
+    border-radius:
+        22px;
+
+    background:
+        var(--blue-light);
+
+    color:
+        var(--blue-dark);
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    font-size:
+        18px;
+
+    font-weight:
+        600;
+
+}
+
+
+.beneficios p {
+
+    margin:
+        0;
+
+}
+
+
+.beneficios span {
+
+    font-size:
+        25px;
+
+}
+
+
+/* ==================================================
+   INFORMAÇÕES
+================================================== */
+
+.produto-info {
+
+    padding-top:
+        15px;
+
+}
+
+
+.tipo {
+
+    display:
+        block;
+
+    margin-bottom:
+        20px;
+
+    color:
+        var(--yellow);
+
+    font-size:
+        20px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        1px;
+
+}
+
+
+.produto-info h1 {
+
+    margin:
+        0 0 15px;
+
+    color:
+        var(--blue);
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(
+            45px,
+            5vw,
+            65px
+        );
+
+    line-height:
+        1.1;
+
+}
+
+
+.preco {
+
+    display:
+        block;
+
+    margin-bottom:
+        28px;
+
+    color:
+        var(--yellow);
+
+    font-size:
+        30px;
+
+}
+
+
+.descricao {
+
+    margin:
+        0 0 55px;
+
+    max-width:
+        700px;
+
+    font-size:
+        22px;
+
+    line-height:
+        1.7;
+
+}
+
+
+/* ==================================================
+   ETAPAS SUPERIORES
+================================================== */
+
+.steps {
+
+    width:
+        100%;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    margin-bottom:
+        70px;
+
+    overflow-x:
+        auto;
+
+    scrollbar-width:
+        none;
+
+}
+
+
+.steps::-webkit-scrollbar {
+
+    display:
+        none;
+
+}
+
+
+.step {
+
+    min-width:
+        175px;
+
+    padding:
+        17px 25px;
+
+    border-radius:
+        999px;
+
+    background:
+        var(--blue-light);
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        14px;
+
+    white-space:
+        nowrap;
+
+    font-size:
+        20px;
+
+    font-weight:
+        600;
+
+}
+
+
+.step span {
+
+    width:
+        38px;
+
+    height:
+        38px;
+
+    flex:
+        0 0 38px;
+
+    border-radius:
+        50%;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    background:
+        rgba(
+            80,
+            167,
+            216,
+            .12
+        );
+
+}
+
+
+.step.active {
+
+    color:
+        white;
+
+    background:
+        var(--blue);
+
+    box-shadow:
+        0 7px 16px
+        rgba(
+            80,
+            167,
+            216,
+            .22
+        );
+
+}
+
+
+.step.active span {
+
+    color:
+        var(--blue-dark);
+
+    background:
+        white;
+
+}
+
+
+.step.complete {
+
+    color:
+        var(--blue-dark);
+
+}
+
+
+.step.complete span {
+
+    color:
+        white;
+
+    background:
+        var(--blue);
+
+    font-size:
+        0;
+
+}
+
+
+.step.complete span::after {
+
+    content:
+        "✓";
+
+    font-size:
+        20px;
+
+}
+
+
+.step-line {
+
+    min-width:
+        45px;
+
+    height:
+        2px;
+
+    background:
+        #d5edf7;
+
+}
+
+
+/* ==================================================
+   CONTEÚDO DAS ETAPAS
+================================================== */
+
+.etapa {
+
+    display:
+        none;
+
+}
+
+
+.etapa.active {
+
+    display:
+        block;
+
+    animation:
+        aparecer .3s ease;
+
+}
+
+
+@keyframes aparecer {
+
+    from {
+
+        opacity:
+            0;
+
+        transform:
+            translateY(10px);
+
+    }
+
+    to {
+
+        opacity:
+            1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* ==================================================
+   GRUPOS
+================================================== */
+
+.campo-grupo {
+
+    margin-bottom:
+        50px;
+
+}
+
+
+.campo-grupo h2,
+.label {
+
+    display:
+        block;
+
+    margin:
+        0 0 25px;
+
+    color:
+        var(--blue-dark);
+
+    font-size:
+        23px;
+
+    font-weight:
+        700;
+
+}
+
+
+.campo-grupo small,
+.label small {
+
+    color:
+        var(--text);
+
+    font-weight:
+        400;
+
+}
+
+
+/* ==================================================
+   CORES
+================================================== */
+
+.cores {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        24px;
+
+}
+
+
+.cor {
+
+    width:
+        65px;
+
+    height:
+        65px;
+
+    padding:
+        0;
+
+    border:
+        0;
+
+    border-radius:
+        50%;
+
+    cursor:
+        pointer;
+
+    position:
+        relative;
+
+    transition:
+        transform .2s;
+
+}
+
+
+.cor:hover {
+
+    transform:
+        scale(1.08);
+
+}
+
+
+.cor.active {
+
+    outline:
+        3px solid
+        var(--blue);
+
+    outline-offset:
+        8px;
+
+}
+
+
+.cor.active::after {
+
+    content:
+        "✓";
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    color:
+        var(--blue);
+
+    font-size:
+        30px;
+
+}
+
+
+.branco {
+
+    background:
+        #ffffff;
+
+    box-shadow:
+        inset 0 0 0 1px
+        #eeeeee;
+
+}
+
+
+.azul {
+
+    background:
+        #163f70;
+
+}
+
+
+.preto {
+
+    background:
+        #111111;
+
+}
+
+
+.azul-claro {
+
+    background:
+        #acd4ff;
+
+}
+
+
+.amarelo {
+
+    background:
+        #dfae3c;
+
+}
+
+
+.vermelho {
+
+    background:
+        #ef282d;
+
+}
+
+
+/* ==================================================
+   UPLOAD
+================================================== */
+
+.upload {
+
+    min-height:
+        240px;
+
+    padding:
+        35px;
+
+    border:
+        2px dashed
+        #cde7f2;
+
+    border-radius:
+        30px;
+
+    cursor:
+        pointer;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    text-align:
+        center;
+
+    transition:
+        .2s;
+
+}
+
+
+.upload:hover,
+.upload.drag {
+
+    border-color:
+        var(--blue);
+
+    background:
+        rgba(
+            233,
+            245,
+            252,
+            .5
+        );
+
+}
+
+
+.upload.arquivo-selecionado {
+
+    border-color:
+        var(--blue);
+
+    background:
+        var(--blue-light);
+
+}
+
+
+.upload-icon {
+
+    margin-bottom:
+        18px;
+
+    font-size:
+        60px;
+
+}
+
+
+.upload strong {
+
+    font-size:
+        20px;
+
+    font-weight:
+        500;
+
+}
+
+
+.upload small {
+
+    margin-top:
+        10px;
+
+    font-size:
+        17px;
+
+}
+
+
+/* ==================================================
+   INPUTS
+================================================== */
+
+.input {
+
+    width:
+        100%;
+
+    height:
+        85px;
+
+    padding:
+        0 30px;
+
+    border:
+        2px solid
+        #e0edf1;
+
+    border-radius:
+        24px;
+
+    outline:
+        none;
+
+    color:
+        var(--text);
+
+    background:
+        white;
+
+    font-size:
+        20px;
+
+    transition:
+        .2s;
+
+}
+
+
+.input:focus {
+
+    border-color:
+        var(--blue);
+
+    box-shadow:
+        0 0 0 4px
+        rgba(
+            80,
+            167,
+            216,
+            .08
+        );
+
+}
+
+
+.input::placeholder {
+
+    color:
+        #a9adb0;
+
+}
+
+
+/* ==================================================
+   BOTÕES GERAIS
+================================================== */
+
+.botao {
+
+    min-height:
+        82px;
+
+    padding:
+        18px 35px;
+
+    border-radius:
+        999px;
+
+    cursor:
+        pointer;
+
+    font-size:
+        20px;
+
+    font-weight:
+        700;
+
+    transition:
+        .2s;
+
+}
+
+
+.principal {
+
+    border:
+        0;
+
+    color:
+        white;
+
+    background:
+        var(--blue);
+
+}
+
+
+.principal:hover {
+
+    background:
+        var(--blue-dark);
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+.botao-largo {
+
+    width:
+        100%;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        25px;
+
+}
+
+
+.botao-largo span {
+
+    font-size:
+        30px;
+
+}
+
+
+.voltar {
+
+    color:
+        var(--blue-dark);
+
+    background:
+        white;
+
+    border:
+        2px solid
+        #d9edf5;
+
+}
+
+
+.voltar:hover {
+
+    background:
+        var(--blue-light);
+
+}
+
+
+/* ==================================================
+   TAMANHOS / MODELOS
+================================================== */
+
+.tamanhos {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        18px;
+
+}
+
+
+.tamanho {
+
+    min-width:
+        95px;
+
+    min-height:
+        75px;
+
+    padding:
+        10px 20px;
+
+    border:
+        2px solid
+        #e0edf1;
+
+    border-radius:
+        20px;
+
+    color:
+        var(--blue-dark);
+
+    background:
+        white;
+
+    cursor:
+        pointer;
+
+    font-size:
+        20px;
+
+    transition:
+        .2s;
+
+}
+
+
+.tamanho:hover,
+.tamanho.active {
+
+    color:
+        white;
+
+    border-color:
+        var(--blue);
+
+    background:
+        var(--blue);
+
+    box-shadow:
+        0 6px 13px
+        rgba(
+            80,
+            167,
+            216,
+            .20
+        );
+
+}
+
+
+/* ==================================================
+   QUANTIDADE
+================================================== */
+
+.quantidade {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+
+}
+
+
+.quantidade button {
+
+    width:
+        75px;
+
+    height:
+        75px;
+
+    border:
+        2px solid
+        #e0edf1;
+
+    border-radius:
+        20px;
+
+    color:
+        var(--blue);
+
+    background:
+        white;
+
+    cursor:
+        pointer;
+
+    font-size:
+        28px;
+
+}
+
+
+.quantidade button:hover {
+
+    background:
+        var(--blue-light);
+
+}
+
+
+.quantidade span {
+
+    width:
+        180px;
+
+    height:
+        75px;
+
+    border:
+        2px solid
+        #e0edf1;
+
+    border-radius:
+        20px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    font-size:
+        22px;
+
+}
+
+
+.minimo {
+
+    margin-top:
+        18px;
+
+    font-size:
+        17px;
+
+}
+
+
+/* ==================================================
+   AÇÕES
+================================================== */
+
+.acoes {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        .85fr
+        1.15fr;
+
+    gap:
+        25px;
+
+    margin-top:
+        60px;
+
+}
+
+
+.aviso {
+
+    margin-top:
+        35px;
+
+    text-align:
+        center;
+
+    font-size:
+        17px;
+
+    line-height:
+        1.6;
+
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (
+    max-width: 950px
+) {
+
+    .produto-container {
+
+        grid-template-columns:
+            1fr;
+
+        max-width:
+            800px;
+
+    }
+
+
+    .produto-info {
+
+        padding-top:
+            0;
+
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (
+    max-width: 700px
+) {
+
+
+    .produto {
+
+        padding:
+            35px 20px 90px;
+
+    }
+
+
+    .produto-container {
+
+        gap:
+            60px;
+
+    }
+
+
+    .produto-imagem {
+
+        border-radius:
+            30px;
+
+    }
+
+
+    .categoria {
+
+        top:
+            20px;
+
+        left:
+            20px;
+
+        padding:
+            10px 20px;
+
+        font-size:
+            16px;
+
+    }
+
+
+    
+
+
+    
+
+
+    .cor-selecionada {
+
+        font-size:
+            17px;
+
+    }
+
+
+    .amostra-cor {
+
+        width:
+            37px;
+
+        height:
+            37px;
+
+        flex-basis:
+            37px;
+
+    }
+
+
+    .beneficios {
+
+        gap:
+            10px;
+
+    }
+
+
+    .beneficios div {
+
+        min-height:
+            70px;
+
+        padding:
+            12px 14px;
+
+        border-radius:
+            17px;
+
+        font-size:
+            14px;
+
+    }
+
+
+    .produto-info h1 {
+
+        font-size:
+            42px;
+
+    }
+
+
+    .preco {
+
+        font-size:
+            25px;
+
+    }
+
+
+    .descricao {
+
+        font-size:
+            18px;
+
+    }
+
+
+    .steps {
+
+        margin-bottom:
+            55px;
+
+    }
+
+
+    .step {
+
+        min-width:
+            150px;
+
+        padding:
+            13px 18px;
+
+        font-size:
+            17px;
+
+    }
+
+
+    .step span {
+
+        width:
+            32px;
+
+        height:
+            32px;
+
+        flex-basis:
+            32px;
+
+    }
+
+
+    .step-line {
+
+        min-width:
+            25px;
+
+    }
+
+
+    .campo-grupo h2,
+    .label {
+
+        font-size:
+            19px;
+
+    }
+
+
+    .cor {
+
+        width:
+            50px;
+
+        height:
+            50px;
+
+    }
+
+
+    .cores {
+
+        gap:
+            19px;
+
+    }
+
+
+    .upload {
+
+        min-height:
+            210px;
+
+        padding:
+            25px 15px;
+
+    }
+
+
+    .upload strong {
+
+        font-size:
+            17px;
+
+    }
+
+
+    .input {
+
+        height:
+            72px;
+
+        padding:
+            0 20px;
+
+        border-radius:
+            18px;
+
+        font-size:
+            17px;
+
+    }
+
+
+    .tamanho {
+
+        min-width:
+            75px;
+
+        min-height:
+            65px;
+
+        font-size:
+            17px;
+
+    }
+
+
+    .quantidade button {
+
+        width:
+            65px;
+
+        height:
+            65px;
+
+    }
+
+
+    .quantidade span {
+
+        width:
+            140px;
+
+        height:
+            65px;
+
+    }
+
+
+    .acoes {
+
+        gap:
+            15px;
+
+    }
+
+
+    .botao {
+
+        min-height:
+            70px;
+
+        padding:
+            14px 20px;
+
+        font-size:
+            17px;
+
+    }
+
+}
+
+
+/* ==================================================
+   CELULAR PEQUENO
+================================================== */
+
+@media (
+    max-width: 430px
+) {
+
+    .produto {
+
+        padding-left:
+            15px;
+
+        padding-right:
+            15px;
+
+    }
+
+
+    .produto-info h1 {
+
+        font-size:
+            36px;
+
+    }
+
+
+    .beneficios {
+
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
+
+    }
+
+
+    .beneficios div {
+
+        font-size:
+            12px;
+
+    }
+
+
+    .cores {
+
+        gap:
+            17px;
+
+    }
+
+
+    .cor {
+
+        width:
+            43px;
+
+        height:
+            43px;
+
+    }
+
+
+    .tamanho {
+
+        min-width:
+            65px;
+
+        min-height:
+            58px;
+
+        font-size:
+            15px;
+
+    }
+
+
+    .acoes {
+
+        grid-template-columns:
+            1fr
+            1.4fr;
+
+    }
+
+
+    .botao {
+
+        font-size:
+            15px;
+
+    }
+
+}
+/* Visualização 3D leve integrada à página de produto */
+.produto-imagem{min-height:520px;background:#496673!important;overflow:hidden;position:relative;}
+.produto3d-viewer{position:absolute;inset:42px 12px 12px;display:flex;align-items:center;justify-content:center;cursor:grab;touch-action:none;perspective:1000px;}
+.produto3d-viewer:active{cursor:grabbing}.produto3d-object{position:relative;width:min(94%,620px);aspect-ratio:700/520;transform-style:preserve-3d;transition:transform .08s linear}.produto3d-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;transform-style:preserve-3d}.produto3d-face--front{transform:translateZ(3px)}.produto3d-face--back{transform:rotateY(180deg) translateZ(3px)}.produto3d-face svg{width:100%;height:100%;display:block;filter:drop-shadow(0 24px 20px rgba(0,0,0,.24));backface-visibility:hidden;-webkit-backface-visibility:hidden}.produto3d-hint{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);background:rgba(13,50,68,.82);color:#fff;padding:8px 14px;border-radius:999px;font-size:12px;white-space:nowrap}.detalhes-opcoes,.controles-3d{display:flex;flex-wrap:wrap;gap:9px}.detalhes-opcoes button,.controles-3d button{border:1px solid #cfe6f2;background:#f5fbfe;color:#23688b;border-radius:10px;padding:10px 13px;cursor:pointer;font-weight:600}.detalhes-opcoes button.active,.detalhes-opcoes button:hover,.controles-3d button:hover{background:#51a9d8;color:white;border-color:#51a9d8}.detalhe-cor{display:flex!important;align-items:center;gap:12px;margin-top:14px}.detalhe-cor input{width:46px;height:38px;border:0;background:transparent}.controles-3d{margin-top:14px}.ajuda-3d{display:block;margin-top:10px;color:#73848c}@media(max-width:700px){.produto-imagem{min-height:410px}.produto3d-viewer{inset:38px 4px 8px}.produto3d-hint{font-size:10px}}
+/* Ajustes V7 do personalizador */
+.cor-livre-label{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:18px}
+.cor-livre-wrap{display:flex;align-items:center;gap:10px;font-size:13px;color:#687a84}
+.cor-livre-wrap input,.nome-personalizacao-controles input[type="color"]{width:48px;height:38px;padding:2px;border:1px solid #cbdce4;border-radius:9px;background:#fff;cursor:pointer}
+.nome-personalizacao-controles{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px;padding:16px;border:1px solid #d8e7ee;border-radius:16px;background:#f7fbfd}
+.nome-personalizacao-controles .label{display:grid;grid-template-columns:150px 1fr;align-items:center;gap:14px;margin:0}
+.nome-personalizacao-controles input[type="range"]{width:100%;accent-color:#168bbd}
+@media(max-width:560px){.nome-personalizacao-controles .label{grid-template-columns:1fr;gap:7px}.cor-livre-label{align-items:flex-start;flex-direction:column}}
+
+/* ==================================================
+   V8 — Personalizador mais compacto e prático
+   Mantém o produto visível enquanto os controles são usados.
+================================================== */
+@media (min-width: 951px){
+  .produto-imagem{
+    position:sticky;
+    top:128px;
+    align-self:start;
+  }
+}
+
+#design .campo-grupo{
+  margin-bottom:28px;
+}
+
+#design .campo-grupo h2,
+#design .label{
+  margin-bottom:14px;
+}
+
+#design .upload{
+  min-height:145px;
+  padding:20px 24px;
+  border-radius:22px;
+}
+
+#design .upload-icon{
+  margin-bottom:8px;
+  font-size:38px;
+}
+
+#design .upload strong{
+  font-size:17px;
+}
+
+#design .upload small{
+  margin-top:5px;
+  font-size:14px;
+}
+
+#design .input{
+  height:64px;
+  padding:0 22px;
+  border-radius:18px;
+  font-size:17px;
+}
+
+#design .nome-personalizacao-controles{
+  gap:9px;
+  margin-top:11px;
+  padding:12px 14px;
+}
+
+#design .nome-personalizacao-controles .label{
+  font-size:15px;
+  grid-template-columns:130px 1fr;
+}
+
+#design .detalhes-3d{
+  margin-top:-4px;
+  padding:18px;
+  border:1px solid #d8e7ee;
+  border-radius:20px;
+  background:#f8fcfe;
+}
+
+#design .detalhes-3d h2{
+  margin-bottom:12px;
+  font-size:20px;
+}
+
+#design .detalhes-opcoes{
+  gap:7px;
+}
+
+#design .detalhes-opcoes button,
+#design .controles-3d button{
+  padding:8px 11px;
+  font-size:13px;
+}
+
+#design .detalhe-cor{
+  margin:12px 0 0;
+  font-size:15px;
+}
+
+#design .controles-3d{
+  margin-top:10px;
+}
+
+#design .ajuda-3d{
+  margin-top:7px;
+  font-size:12px;
+}
+
+@media (max-width:950px){
+  #design .campo-grupo{margin-bottom:24px}
+  #design .upload{min-height:130px}
+}
+
+@media (max-width:560px){
+  #design .nome-personalizacao-controles .label{grid-template-columns:1fr}
+  #design .detalhes-3d{padding:14px}
+}
+
+:root{--blue:#0b4c73;--blue-dark:#073a59;--deep:#0b3f61;--blue-light:#edf4f7;--light-blue:#edf4f7;--blue-soft:#e5eff4;--gold:#667784;--yellow:#667784;--text:#465a66;--border:#d9e6ec}
+/* V17 — controles tipográficos do nome personalizado */
+.nome-personalizacao-controles .fonte-personalizada{
+  width:100%; min-height:42px; margin:0; padding:8px 10px;
+  border:1px solid #cbdce4; border-radius:9px; background:#fff;
+  color:#244c61; font:600 14px "DM Sans",Arial,sans-serif;
+}
+.nome-personalizacao-controles #frasePeso{accent-color:#0d5278}
+
+
+/* V19 — editor avançado sem alterar a estrutura base */
+.botao-texto-extra{margin-top:14px;border:1px dashed #9ebdcb;background:#f7fbfd;color:#0b4c73;border-radius:14px;padding:12px 16px;font-weight:800;cursor:pointer}
+.texto-dinamico{margin-top:18px;padding:16px;border:1px solid #d9e6ec;border-radius:18px;background:#fbfdfe}.texto-dinamico-topo{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;color:#0b4c73}.texto-dinamico-topo button{border:0;background:none;color:#7b6262;cursor:pointer;font-weight:700}
+.opcoes-especificas{padding:18px;border:1px solid #d9e6ec;border-radius:20px;background:#f8fbfc}.opcoes-especificas #opcoesEspecificasConteudo{display:grid;grid-template-columns:1fr 1fr;gap:12px}.opcoes-especificas .input{margin-top:8px}
+.acoes-previa{display:flex;gap:10px;margin:18px 0 24px}.acoes-previa .botao{flex:1}
+@media(max-width:650px){.opcoes-especificas #opcoesEspecificasConteudo{grid-template-columns:1fr}.acoes-previa{flex-direction:column}}
+
+
+/* ==================================================
+   V23 — refinamento mobile e controles de toque
+================================================== */
+.fonte-personalizada,
+.fonte-personalizada option {
+    font-family: "DM Sans", Arial, sans-serif !important;
+    font-style: normal !important;
+    font-weight: 600;
+}
+
+@media (max-width: 700px) {
+    .produto {
+        padding: 24px 14px 64px;
+    }
+
+    .produto-container {
+        gap: 30px;
+    }
+
+    .produto-imagem {
+        min-height: 350px;
+        border-radius: 24px;
+    }
+
+    .produto3d-viewer {
+        inset: 34px 2px 6px;
+        touch-action: pan-y;
+    }
+
+    .produto3d-hint {
+        bottom: 10px;
+        max-width: calc(100% - 24px);
+        padding: 7px 11px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .cor-selecionada {
+        margin-top: 14px;
+        font-size: 15px;
+    }
+
+    .beneficios {
+        margin-top: 20px;
+        gap: 8px;
+    }
+
+    .beneficios div {
+        min-height: 58px;
+        padding: 10px 11px;
+        border-radius: 14px;
+        font-size: 13px;
+    }
+
+    .beneficios span {
+        font-size: 20px;
+    }
+
+    .tipo {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .produto-info h1 {
+        margin-bottom: 10px;
+        font-size: clamp(31px, 9vw, 40px);
+    }
+
+    .preco {
+        margin-bottom: 18px;
+        font-size: 22px;
+    }
+
+    .descricao {
+        margin-bottom: 30px;
+        font-size: 16px;
+        line-height: 1.55;
+    }
+
+    .steps {
+        margin: 0 -14px 32px;
+        padding: 0 14px 5px;
+        scroll-snap-type: x proximity;
+    }
+
+    .step {
+        min-width: 124px;
+        padding: 10px 13px;
+        gap: 8px;
+        font-size: 14px;
+        scroll-snap-align: start;
+    }
+
+    .step span {
+        width: 28px;
+        height: 28px;
+        flex-basis: 28px;
+    }
+
+    .step-line {
+        min-width: 16px;
+    }
+
+    .campo-grupo,
+    #design .campo-grupo {
+        margin-bottom: 22px;
+    }
+
+    .campo-grupo h2,
+    .label,
+    #design .campo-grupo h2 {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .cores {
+        gap: 12px;
+    }
+
+    .cor {
+        width: 44px;
+        height: 44px;
+    }
+
+    #design .upload,
+    .upload {
+        min-height: 118px;
+        padding: 16px 12px;
+        border-radius: 18px;
+    }
+
+    #design .upload-icon {
+        font-size: 32px;
+    }
+
+    #design .input,
+    .input {
+        height: 54px;
+        padding: 0 14px;
+        border-radius: 14px;
+        font-size: 16px;
+    }
+
+    #design .nome-personalizacao-controles,
+    .nome-personalizacao-controles {
+        gap: 12px;
+        padding: 12px;
+        border-radius: 14px;
+    }
+
+    #design .nome-personalizacao-controles .label,
+    .nome-personalizacao-controles .label {
+        grid-template-columns: 1fr;
+        gap: 7px;
+        font-size: 14px;
+    }
+
+    .nome-personalizacao-controles input[type="range"] {
+        min-height: 34px;
+    }
+
+    .cor-livre-label {
+        margin-top: 14px;
+    }
+
+    .botao-texto-extra {
+        width: 100%;
+        min-height: 48px;
+    }
+
+    .texto-dinamico {
+        padding: 13px;
+        border-radius: 14px;
+    }
+
+    #design .detalhes-3d {
+        padding: 13px;
+        border-radius: 16px;
+    }
+
+    #design .detalhes-opcoes button,
+    #design .controles-3d button,
+    .detalhes-opcoes button,
+    .controles-3d button {
+        min-height: 44px;
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    .tamanho {
+        min-width: 64px;
+        min-height: 52px;
+        font-size: 15px;
+    }
+
+    .quantidade button {
+        width: 54px;
+        height: 54px;
+    }
+
+    .quantidade span {
+        width: 110px;
+        height: 54px;
+    }
+
+    .acoes {
+        gap: 10px;
+    }
+
+    .botao {
+        min-height: 54px;
+        padding: 12px 14px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 430px) {
+    .produto-imagem {
+        min-height: 315px;
+    }
+
+    .produto3d-hint {
+        display: none;
+    }
+
+    .beneficios {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .acoes {
+        grid-template-columns: 1fr;
+    }
+
+    .acoes .botao {
+        width: 100%;
+    }
+}
+
+/* ==================================================
+   V24 — camadas de imagem/texto por área do produto
+================================================== */
+.imagem-personalizacao-controles{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:10px;
+    margin-top:12px;
+    padding:12px 14px;
+    border:1px solid #d8e7ee;
+    border-radius:16px;
+    background:#f7fbfd;
+}
+.imagem-personalizacao-controles .label{
+    display:grid;
+    grid-template-columns:150px 1fr;
+    align-items:center;
+    gap:14px;
+    margin:0!important;
+    font-size:15px;
+}
+.imagem-personalizacao-controles input[type="range"]{
+    width:100%;
+    accent-color:#168bbd;
+}
+.area-personalizacao{
+    min-height:42px!important;
+    height:42px!important;
+    padding:7px 10px!important;
+    border:1px solid #cbdce4!important;
+    border-radius:9px!important;
+    color:#244c61;
+    background:#fff;
+    font:600 14px "DM Sans",Arial,sans-serif!important;
+}
+.imagem-dinamica{
+    margin-top:18px;
+    padding:16px;
+    border:1px solid #d9e6ec;
+    border-radius:18px;
+    background:#fbfdfe;
+}
+.imagem-dinamica .upload-extra{
+    min-height:105px!important;
+    padding:14px 18px!important;
+    border-radius:16px!important;
+}
+.imagem-dinamica .upload-extra .upload-icon{
+    margin-bottom:4px!important;
+    font-size:28px!important;
+}
+.imagem-dinamica .upload-extra strong{font-size:14px!important;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.imagem-dinamica .upload-extra small{font-size:12px!important}
+.botao-texto-extra:disabled{opacity:.55;cursor:not-allowed}
+
+@media(max-width:700px){
+    .imagem-personalizacao-controles{padding:12px;gap:12px;border-radius:14px}
+    .imagem-personalizacao-controles .label{grid-template-columns:1fr;gap:7px;font-size:14px}
+    .imagem-personalizacao-controles input[type="range"]{min-height:34px}
+    .imagem-dinamica{padding:13px;border-radius:14px}
+}

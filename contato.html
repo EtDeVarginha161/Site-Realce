@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- =========================================================
+         CONFIGURAÇÕES BÁSICAS DA PÁGINA
+         ========================================================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato & Orçamento</title>
+
+    <!-- Importação das fontes utilizadas no projeto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Arquivo CSS separado -->
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="site-shared.css">
+    <link rel="icon" type="image/jpeg" href="img/logo.jpeg">
+</head>
+
+<body>
+
+
+
+    <!-- =========================================================
+         2. CABEÇALHO / MENU
+         Logo à esquerda e botão de menu à direita.
+         ========================================================= -->
+    <header class="site-header">
+  <div class="site-header-inner">
+    <a href="index.html" class="site-logo" aria-label="Realce - Início"><img src="img/logo.jpeg" alt="Realce"></a>
+    <nav class="site-desktop-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="apresentacao.html">Quem Somos</a>
+      <a href="missao.html">Missão &amp; Valores</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+    <button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="siteMobileNav"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="site-mobile-nav" id="siteMobileNav" aria-label="Navegação mobile">
+    <a href="index.html">Início</a><a href="apresentacao.html">Quem Somos</a><a href="missao.html">Missão &amp; Valores</a><a href="catalogo.html">Catálogo</a><a href="contato.html">Contato</a>
+  </nav>
+</header>
+<!-- elementos de compatibilidade para scripts antigos; não são exibidos -->
+<div class="site-legacy-compat" aria-hidden="true">
+  <button id="menuButton" class="menu-button" type="button"></button><div id="mobileNav" class="mobile-nav"></div>
+  <button id="menuBtn" class="menu-btn" type="button"></button><div id="mobileMenu" class="mobile-menu"></div><div id="menu" class="menu"></div>
+</div>
+
+
+    <!-- =========================================================
+         3. BANNER PRINCIPAL / HERO
+         Parte azul com o título "Contato & Orçamento".
+         ========================================================= -->
+    <section class="hero">
+
+        <div class="hero-inner">
+
+            <!-- Pequeno título amarelo -->
+            <div class="eyebrow">FALE CONOSCO</div>
+
+            <!-- Título principal -->
+            <h1>
+                Contato &amp;<br>
+                Orçamento
+            </h1>
+
+            <!-- Texto de apresentação -->
+            <p>
+                Pronto para criar algo único?
+                Nossa equipe está aqui para ajudar.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         4. ÁREA PRINCIPAL
+         Contém as informações de contato e o formulário.
+         ========================================================= -->
+    <main>
+
+        <!-- =====================================================
+             4.1 INFORMAÇÕES DE CONTATO
+             ===================================================== -->
+        <section aria-labelledby="informacoes">
+
+            <!-- Pequeno título da seção -->
+            <div class="section-label">INFORMAÇÕES</div>
+
+            <!-- Título da seção -->
+            <h2 id="informacoes" class="section-title">
+                Como podemos ajudar?
+            </h2>
+
+            <!-- Texto explicativo -->
+            <p class="intro">
+                Preencha o formulário ou entre em contato diretamente.
+                Nossa equipe responde em até 24 horas úteis.
+            </p>
+
+
+            <!-- =================================================
+                 4.2 CARDS DE INFORMAÇÃO
+                 ================================================= -->
+            <div class="info-grid">
+
+                <!-- Card: E-mail -->
+                <article class="info-card">
+                    <div class="icon">
+                        <!-- Ícone de e-mail -->
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1.8">
+                            <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                            <path d="m4 7 8 6 8-6"></path>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <h3>E-mail</h3>
+                        <p>contato@realce.com.br</p>
+                    </div>
+                </article>
+
+
+                <!-- Card: WhatsApp / Telefone -->
+                <article class="info-card">
+                    <div class="icon">
+                        <!-- Ícone de telefone -->
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1.8">
+                            <path d="M6.6 3.8 9 3l2 4.5-1.7 1.6a15 15 0 0 0 5.6 5.6l1.6-1.7 4.5 2-.8 2.4a2 2 0 0 1-2.1 1.3C10.2 18 6 13.8 4.3 5.9A2 2 0 0 1 6.6 3.8Z"></path>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <h3>WhatsApp / Telefone</h3>
+                        <p>(11) 98879-5634</p>
+                    </div>
+                </article>
+
+
+                <!-- Card: Horário -->
+                <article class="info-card">
+                    <div class="icon">
+                        <!-- Ícone de relógio -->
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1.8">
+                            <circle cx="12" cy="12" r="8.5"></circle>
+                            <path d="M12 7v5l3 2"></path>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <h3>Horário de atendimento</h3>
+                        <p>Seg–Sex, 9h às 18h</p>
+                    </div>
+                </article>
+
+
+                <!-- Card: Localização -->
+                <article class="info-card">
+                    <div class="icon">
+                        <!-- Ícone de localização -->
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1.8">
+                            <path d="M20 10.5c0 5.2-8 10-8 10s-8-4.8-8-10a8 8 0 1 1 16 0Z"></path>
+                            <circle cx="12" cy="10.5" r="2.5"></circle>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <h3>Localização</h3>
+                        <p>São Paulo, SP — Brasil</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             5. ÁREA DE CONTATO + FORMULÁRIO
+             ===================================================== -->
+        <section id="orcamento" class="contact-layout">
+
+
+            <!-- =================================================
+                 5.1 TEXTO LATERAL
+                 ================================================= -->
+            <div class="contact-side">
+
+                <div class="section-label">
+                    FALE COM A REALCE
+                </div>
+
+                <h2>
+                    Vamos tirar seu projeto do papel?
+                </h2>
+
+                <p>
+                    Conte um pouco sobre o que você precisa.
+                    Envie as informações e nossa equipe poderá
+                    preparar uma proposta de acordo com o seu projeto.
+                </p>
+
+
+                <!-- Lista de vantagens -->
+                <div class="mini-list">
+
+                    <div class="mini-item">
+                        <span class="mini-dot"></span>
+                        <span>Atendimento personalizado</span>
+                    </div>
+
+                    <div class="mini-item">
+                        <span class="mini-dot"></span>
+                        <span>Orçamento sob medida</span>
+                    </div>
+
+                    <div class="mini-item">
+                        <span class="mini-dot"></span>
+                        <span>Resposta em até 24 horas úteis</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 5.2 FORMULÁRIO DE ORÇAMENTO
+                 ================================================= -->
+            <form class="form-card" id="contactForm">
+
+                <h2>Solicitar orçamento</h2>
+
+
+                <!-- Nome -->
+                <div class="field">
+                    <label for="nome">Nome completo *</label>
+
+                    <input
+                        id="nome"
+                        name="nome"
+                        type="text"
+                        placeholder="Seu nome"
+                        required
+                    >
+                </div>
+
+
+                <!-- Empresa / Marca -->
+                <div class="field">
+                    <label for="empresa">Empresa / Marca</label>
+
+                    <input
+                        id="empresa"
+                        name="empresa"
+                        type="text"
+                        placeholder="Nome da sua marca"
+                    >
+                </div>
+
+
+                <!-- E-mail -->
+                <div class="field">
+                    <label for="email">E-mail *</label>
+
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="seu@email.com"
+                        required
+                    >
+                </div>
+
+
+                <!-- =================================================
+                     Telefone e Produto na mesma linha
+                     ================================================= -->
+                <div class="two-cols">
+
+                    <!-- WhatsApp / Telefone -->
+                    <div class="field">
+                        <label for="telefone">
+                            WhatsApp / Telefone
+                        </label>
+
+                        <input
+                            id="telefone"
+                            name="telefone"
+                            type="tel"
+                            placeholder="(11) 99999-0000"
+                        >
+                    </div>
+
+
+                    <!-- Produto -->
+                    <div class="field">
+                        <label for="produto">
+                            Produto de interesse *
+                        </label>
+
+                        <select
+                            id="produto"
+                            name="produto"
+                            required
+                        >
+                            <option value="">
+                                Selecione um produto
+                            </option>
+
+                            <option value="identidade-visual">
+                                Identidade visual
+                            </option>
+
+                            <option value="design-grafico">
+                                Design gráfico
+                            </option>
+
+                            <option value="material-promocional">
+                                Material promocional
+                            </option>
+
+                            <option value="outro">
+                                Outro
+                            </option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <!-- Quantidade -->
+                <div class="field">
+                    <label for="quantidade">
+                        Quantidade estimada *
+                    </label>
+
+                    <input
+                        id="quantidade"
+                        name="quantidade"
+                        type="text"
+                        placeholder="Ex.: 100 unidades"
+                        required
+                    >
+                </div>
+
+
+                <!-- Detalhes -->
+                <div class="field">
+                    <label for="detalhes">
+                        Detalhes do projeto
+                    </label>
+
+                    <textarea
+                        id="detalhes"
+                        name="detalhes"
+                        placeholder="Descreva seu projeto, prazo desejado, referências de design ou qualquer informação relevante..."
+                    ></textarea>
+                </div>
+
+
+                <!-- Botão -->
+                <button
+                    class="submit"
+                    type="submit"
+                >
+                    ✈ Enviar solicitação
+                </button>
+
+
+                <!-- Mensagem exibida após o envio -->
+                <div
+                    class="success"
+                    id="success"
+                >
+                    Solicitação preenchida com sucesso!
+                    Este formulário é uma demonstração e ainda
+                    não envia os dados para um servidor.
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         6. RODAPÉ
+         ========================================================= -->
+    <footer>
+        © 2026 Realce — Todos os direitos reservados.
+    </footer>
+
+
+    <!-- =========================================================
+         7. JAVASCRIPT
+         Demonstração do envio do formulário.
+         ========================================================= -->
+    <script>
+        // Seleciona o formulário
+        const form = document.getElementById("contactForm");
+
+        // Seleciona a mensagem de sucesso
+        const success = document.getElementById("success");
+
+        // Intercepta o envio do formulário
+        form.addEventListener("submit", function(event) {
+
+            // Impede o navegador de recarregar a página
+            event.preventDefault();
+
+            // Mostra a mensagem de sucesso
+            success.style.display = "block";
+
+            // Leva o usuário até a mensagem
+            success.scrollIntoView({
+                behavior: "smooth",
+                block: "nearest"
+            });
+        });
+    </script>
+
+<footer id="site-footer" class="site-footer">
+  <div class="site-footer-inner">
+    <div class="site-footer-brand">
+      <a href="index.html" class="site-footer-wordmark" aria-label="Página inicial"><img src="img/logo-footer-realce.jpeg" alt="Realce" class="site-footer-logo-img"></a>
+      <p>Produtos únicos com a sua identidade. Para marcas que querem se destacar.</p>
+      <div class="site-socials" aria-label="Redes sociais">
+        <a href="#" aria-label="Instagram"><img src="img/Instagram.png" alt=""></a>
+        <a href="#" aria-label="Facebook"><img src="img/facebook.png" alt=""></a>
+        <a href="#" aria-label="WhatsApp"><img src="img/whatsapp.webp" alt=""></a>
+      </div>
+    </div>
+
+    <div class="site-footer-column">
+      <h3>NAVEGAÇÃO</h3>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="apresentacao.html">Quem Somos</a>
+      <a href="missao.html">Missão &amp; Valores</a>
+      <a href="contato.html">Contato</a>
+    </div>
+
+    <div class="site-footer-column">
+      <h3>PRODUTOS</h3>
+      <a href="produto.html?produto=Camiseta">Camisetas</a>
+      <a href="produto.html?produto=Caneca">Canecas</a>
+      <a href="produto.html?produto=Capa%20de%20Celular">Capas de Celular</a>
+      <a href="produto.html?produto=Caderno">Cadernos</a>
+      <a href="produto.html?produto=Bolsa%20Tote">Bolsas Tote</a>
+      <a href="produto.html?produto=Almofada">Almofadas</a>
+    </div>
+
+    <div class="site-footer-column site-footer-contact">
+      <h3>CONTATO</h3>
+      <a href="mailto:contato@realce.com.br"><span>✉</span> contato@realce.com.br</a>
+      <a href="tel:+5511999990000"><span>☎</span> (11) 98879-5634</a>
+      <a class="site-budget-button" href="contato.html">Solicitar orçamento</a>
+    </div>
+  </div>
+  <div class="site-copyright">© 2026 Realce. Todos os direitos reservados.</div>
+</footer>
+<script src="site-shared.js"></script>
+</body>
+</html>
