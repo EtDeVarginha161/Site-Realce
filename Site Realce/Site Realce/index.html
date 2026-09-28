@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Realce — produtos personalizados para marcas que querem se destacar.">
+  <title>Realce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="site-shared.css">
+  <link rel="icon" type="image/jpeg" href="img/logo.jpeg">
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="index.html" class="site-logo" aria-label="Realce - Início"><img src="img/logo.jpeg" alt="Realce"></a>
+    <nav class="site-desktop-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a><a href="apresentacao.html">Quem Somos</a><a href="missao.html">Missão &amp; Valores</a><a href="catalogo.html">Catálogo</a><a href="contato.html">Contato</a>
+    </nav>
+    <button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="siteMobileNav"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="site-mobile-nav" id="siteMobileNav" aria-label="Navegação mobile">
+    <a href="index.html">Início</a><a href="apresentacao.html">Quem Somos</a><a href="missao.html">Missão &amp; Valores</a><a href="catalogo.html">Catálogo</a><a href="contato.html">Contato</a>
+  </nav>
+</header>
+
+<main>
+  <section class="home-hero">
+    <div class="home-hero-inner">
+      <div class="home-hero-visual" aria-label="Galeria de produtos Realce">
+        <div class="hero-slider" id="heroSlider">
+          <div class="hero-slide is-active"><img src="img/home-slide-principal-v13.png" alt="Produtos personalizados Realce"></div>
+          <div class="hero-slide"><img src="img/camiseta-realce.jpeg" alt="Camisetas personalizadas Realce"></div>
+          <div class="hero-slide"><img src="img/caneca-realce.jpeg" alt="Canecas personalizadas Realce"></div>
+          <div class="hero-slide"><img src="img/caderno-realce.jpeg" alt="Cadernos personalizados Realce"></div>
+          <div class="hero-slide"><img src="img/garrafa-realce.jpeg" alt="Garrafas personalizadas Realce"></div>
+          <div class="hero-slide"><img src="img/ecobag-realce.jpeg" alt="Ecobags personalizadas Realce"></div>
+          <div class="hero-slide"><img src="img/almofada-realce.jpeg" alt="Almofadas personalizadas Realce"></div>
+          <div class="hero-slide"><img src="img/capa-celular-realce.jpeg" alt="Capas de celular personalizadas Realce"></div>
+        </div>
+        <button class="hero-arrow hero-prev" type="button" aria-label="Imagem anterior">‹</button>
+        <button class="hero-arrow hero-next" type="button" aria-label="Próxima imagem">›</button>
+        <div class="hero-dots" aria-label="Selecionar imagem"></div>
+        <div class="hero-quick-actions"><a href="catalogo.html">Ver catálogo <span>→</span></a><a href="apresentacao.html">Conheça nossa história <span>→</span></a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefit-strip" aria-label="Diferenciais">
+    <div class="benefit-grid">
+      <article><span class="line-icon">✎</span><div><h3>Personalização total</h3><p>Sua arte, seu nome e suas cores em produtos feitos para você.</p></div></article>
+      <article><span class="line-icon">⌗</span><div><h3>Identidade em cada detalhe</h3><p>Criações pensadas para comunicar e fortalecer a sua marca.</p></div></article>
+      <article><span class="line-icon">⚙</span><div><h3>Produção com qualidade</h3><p>Cuidado, agilidade e acabamento em todas as etapas.</p></div></article>
+      <article><span class="line-icon">◉</span><div><h3>Atendimento completo</h3><p>Da ideia ao pedido, acompanhamos todo o seu projeto.</p></div></article>
+    </div>
+  </section>
+
+  <section class="home-products">
+    <div class="home-products-heading">
+      <div><p class="eyebrow">NOSSO CATÁLOGO</p><h2>Produtos para todas as ideias.</h2></div>
+      <p>Explore alguns dos formatos que podem receber sua identidade. Cada produto pode ser personalizado do seu jeito.</p>
+    </div>
+    <div class="home-product-grid">
+      <a href="produto.html?produto=camiseta" class="home-product-card"><div><img src="img/camiseta-realce.jpeg" alt="Camiseta personalizada"></div><h3>Camisetas</h3><p>Conforto, estilo e identidade.</p><span>Personalizar →</span></a>
+      <a href="produto.html?produto=caneca" class="home-product-card"><div><img src="img/caneca-realce.jpeg" alt="Caneca personalizada"></div><h3>Canecas</h3><p>Sua marca em todos os momentos.</p><span>Personalizar →</span></a>
+      <a href="produto.html?produto=capa de celular" class="home-product-card"><div><img src="img/capa-celular-realce.jpeg" alt="Capa de celular personalizada"></div><h3>Capas</h3><p>Proteção com personalidade.</p><span>Personalizar →</span></a>
+      <a href="produto.html?produto=caderno" class="home-product-card"><div><img src="img/caderno-realce.jpeg" alt="Caderno personalizado"></div><h3>Cadernos</h3><p>Ideias que carregam sua marca.</p><span>Personalizar →</span></a>
+    </div>
+    <div class="home-products-action"><a class="outline-pill" href="catalogo.html">Ver catálogo completo <span>→</span></a></div>
+  </section>
+
+  <section class="home-about">
+    <div class="home-section-grid">
+      <div class="home-copy-block">
+        <p class="eyebrow">QUEM SOMOS</p><h2>Mais que um produto, uma forma de se expressar.</h2>
+        <p>A Realce transforma ideias e identidades em produtos personalizados feitos para marcar presença.</p>
+        <p>Unimos criatividade, personalização e cuidado para entregar soluções que valorizam cada marca.</p>
+        <a class="outline-pill" href="apresentacao.html">Conheça a Realce <span>→</span></a>
+      </div>
+      <div class="about-product-image"><img src="img/home-quem-somos-v14.png" alt="Produto personalizado Realce"></div>
+    </div>
+  </section>
+
+  <section class="values-preview">
+    <div class="values-grid">
+      <article><span class="value-icon"><img src="img/missao.png" alt="Missão"></span><h3>MISSÃO</h3><p>Transformar identidades em produtos personalizados de qualidade, com criatividade e cuidado.</p></article>
+      <article><span class="value-icon"><img src="img/visao.png" alt="Visão"></span><h3>VISÃO</h3><p>Ser referência em personalização, reconhecida pela excelência, inovação e impacto positivo.</p></article>
+      <article><span class="value-icon"><img src="img/valores.png" alt="Valores"></span><h3>VALORES</h3><p>Qualidade, transparência, respeito, comprometimento, sustentabilidade e criatividade.</p></article>
+    </div>
+    <a class="section-text-link" href="missao.html">Conheça nossa missão e valores →</a>
+  </section>
+
+  <section class="atelier-callout">
+    <div><p class="eyebrow">PERSONALIZE DO SEU JEITO</p><h2>Sua marca, do seu jeito.</h2><p>Escolha o produto, a cor, envie sua arte, adicione nome ou frase e acompanhe a personalização antes de solicitar seu orçamento.</p></div>
+    <a class="primary-pill" href="catalogo.html">Começar a personalizar <span>→</span></a>
+  </section>
+</main>
+
+
+<footer class="site-footer" id="site-footer">
+  <div class="site-footer-inner">
+    <div class="site-footer-brand">
+      <a class="site-footer-wordmark" href="index.html"><img src="img/logo-footer-realce.jpeg" alt="Realce" class="site-footer-logo-img"></a>
+      <p>Produtos únicos com a sua identidade. Para marcas que querem se destacar.</p>
+      <div class="site-socials">
+        <a href="#" aria-label="Instagram"><img src="img/Instagram.png" alt=""></a>
+        <a href="#" aria-label="Facebook"><img src="img/facebook.png" alt=""></a>
+        <a href="#" aria-label="WhatsApp"><img src="img/whatsapp.webp" alt=""></a>
+      </div>
+    </div>
+
+    <div class="site-footer-column">
+        <h3>NAVEGAÇÃO</h3>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="apresentacao.html">Quem Somos</a>
+        <a href="missao.html">Missão &amp; Valores</a>
+        <a href="contato.html">Contato</a>
+    </div>
+
+    <div class="site-footer-column">
+        <h3>PRODUTOS</h3>
+        <a href="produto.html?produto=camiseta">Camisetas</a>
+        <a href="produto.html?produto=caneca">Canecas</a>
+        <a href="produto.html?produto=capa de celular">Capas de Celular</a>
+        <a href="produto.html?produto=caderno">Cadernos</a>
+        <a href="produto.html?produto=bolsa tote">Bolsas Tote</a>
+        <a href="produto.html?produto=almofada">Almofadas</a>
+    </div>
+
+    <div class="site-footer-column site-footer-contact">
+        <h3>CONTATO</h3><a href="mailto:contato@realce.com.br">
+        <span>✉</span> contato@realce.com.br</a>
+        <a href="tel:+5511999990000"><span>☎</span> (11) 98879-5634</a>
+        <a class="site-budget-button" href="contato.html">Solicitar orçamento</a>
+    </div>
+
+  </div>
+  <div class="site-copyright">© 2026 Realce. Todos os direitos reservados.</div>
+</footer>
+<script src="site-shared.js"></script>
+<script>
+(function(){
+ const root=document.getElementById('heroSlider'); if(!root)return;
+ const slides=[...root.querySelectorAll('.hero-slide')], dotsBox=document.querySelector('.hero-dots'); let current=0,timer;
+ slides.forEach((_,i)=>{const b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Mostrar imagem '+(i+1));b.addEventListener('click',()=>show(i,true));dotsBox.appendChild(b)});
+ const dots=[...dotsBox.children];
+ function show(i,restart){slides[current].classList.remove('is-active');dots[current]?.classList.remove('is-active');current=(i+slides.length)%slides.length;slides[current].classList.add('is-active');dots[current]?.classList.add('is-active');if(restart)auto()}
+ function auto(){clearInterval(timer);timer=setInterval(()=>show(current+1,false),4500)}
+ document.querySelector('.hero-prev')?.addEventListener('click',()=>show(current-1,true));document.querySelector('.hero-next')?.addEventListener('click',()=>show(current+1,true));
+ dots[0]?.classList.add('is-active'); auto();
+ root.closest('.home-hero-visual')?.addEventListener('mouseenter',()=>clearInterval(timer));root.closest('.home-hero-visual')?.addEventListener('mouseleave',auto);
+})();
+</script>
+</body>
+</html>
